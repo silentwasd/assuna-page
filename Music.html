@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://bootstraptema.ru/snippets/audio/2017/jplayer/jplayer.min.css" />
+<script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="https://bootstraptema.ru/snippets/audio/2017/jplayer/jquery.jplayer.min.js"></script>
+<script src="https://bootstraptema.ru/snippets/audio/2017/jplayer/jplayer.playlist.min.js"></script>
+
+<style>
+    body {
+        color: #8f8f8f;
+        font: 12px Tahoma, sans-serif;
+        background: url(https://phonoteka.org/uploads/posts/2021-06/1624464019_41-phonoteka_org-p-sintveiv-oboi-krasivo-43.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    <canvas></canvas>
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                <div class="jp-type-playlist">
+                    <div class="jp-gui jp-interface">
+                        <div class="jp-controls">
+                            <button class="jp-play" role="button" tabindex="0">play</button>
+                        </div>
+                        <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar"></div>
+                            </div>
+                        </div>
+                        <div class="jp-volume-controls">
+                            <button class="jp-mute" role="button" tabindex="0">mute</button>
+                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value"></div>
+                            </div>
+                        </div>
+                        <div class="jp-time-holder">
+                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        </div>
+
+                    </div>
+                    <div class="jp-playlist">
+                        <ul>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                $(document).ready(function(){
+
+                    new jPlayerPlaylist({
+                        jPlayer: "#jquery_jplayer_1",
+                        cssSelectorAncestor: "#jp_container_1"
+                    }, [
+                        {
+                            title:"Sedkav Retrowave",
+                            mp3:"https://storage1.lightaudio.ru/dm/399bebab/3bb509f6/Sedkav%20%E2%80%94%20Retrowave.mp3?play",
+                        },
+                        {
+                            title:"G3Ox_Em Gigachad Theme (Retrowave Remix)",
+                            mp3:"https://cdn.muzyet.net/?h=JGraYpdVSCzeo7V5mlUQB8k1hMygaox3I8GCdHHbqXFKauNdolGBSsumooe-YBngpkJDv_vBkn04vVpcdga5VSpK60JhQTFYH7Wxj8glRDLVMw",
+
+                        }
+                    ], {
+                        swfPath: "../../dist/jplayer",
+                        supplied: "mp3",
+                        wmode: "window",
+                        useStateClassSkin: true,
+                        autoBlur: false,
+                        smoothPlayBar: true,
+                        keyEnabled: true
+                    });
+                });
+                //]]>
+            </script>
+
+        </div><!-- ./col-md-offset-4 -->
+    </div><!-- ./row -->
+</div><!-- ./container -->
