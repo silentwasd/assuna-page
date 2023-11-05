@@ -37,7 +37,11 @@ body {
 }
 
 #radio .radio2ico {
-    background-image: url('https://asianlite.ae/wp-content/uploads/2018/09/JtNS_gjE_400x400.jpg');
+    background-image: url('https://i1.sndcdn.com/artworks-000218165694-h7q1a0-t500x500.jpg');
+}
+
+#radio .radio3ico {
+    background-image: url('.jpg');
 }
 
 #radio .radio {
@@ -209,15 +213,6 @@ input[type=radio]:checked + label span.radioBtn7 {
     background-color: #d83f1f
 }
 
-#footer {
-    height: 150px;
-    background: #eee;
-    margin: -16px 0;
-    height: 20px;
-    @include darkGradientBg;
-    border-radius: 0 0 15px 15px;
-    border-top: 1px solid #383838
-}
 
 
 

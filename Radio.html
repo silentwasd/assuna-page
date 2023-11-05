@@ -26,11 +26,18 @@
                         <div id="radioPlayer2"></div>
                     </div>
                 </li>
+
+                <li class="stop">
+                    <div class="col-2 fl radioIcon radio3ico">&nbsp;</div>
+                    <div class="col-8 desc fl"><h2>nightcore</h2></div>
+                    <div id="radio3" class="col-2 fr play">
+                        <div id="radioPlayer3"></div>
+                    </div>
+                </li>
             </ul>
         </div>
     </form>
 </div>
-<div id="footer" class="row">.</div>
 <script src="/css/radio.js"></script>
 <script>
     radioFloPlayer.embed({
@@ -50,6 +57,16 @@
         'skin': 'dark',
         'width': 1,
         'elementId': 'radioPlayer2',
+        'volume': 0.3
+    });
+
+    radioFloPlayer.embed({
+        'url': 'http://nightcore.stream.laut.fm/nightcore',
+        'station-name': '',
+        'autoplay': false,
+        'skin': 'dark',
+        'width': 1,
+        'elementId': 'radioPlayer3',
         'volume': 0.3
     });
 </script>
