@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: Retro;
+    src: url("/fonts/retro.otf") format("opentype");
+}
 
 body {
     font-family: Georgia, "Times New Roman";
@@ -80,7 +83,7 @@ nav ul li {
 
 nav ul li a {
     padding: 18px;
-    font-family: "Open Sans";
+    font-family: Retro;
     text-transform: uppercase;
     color: rgba(0, 35, 122, 0.5);
     font-size: 18px;
