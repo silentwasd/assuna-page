@@ -23,9 +23,19 @@
         Click to fire
     </div>
 </section>
-<script src="js/radio.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
-<script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.109.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.109.0/examples/jsm/"
+      }
+    }
+</script>
+
+<script type="module" src="js/radio.js"></script>
+
 </body>
 </html>

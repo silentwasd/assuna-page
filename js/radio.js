@@ -1,3 +1,6 @@
+import * as THREE from 'three';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
 /**
  * Common options
  */
@@ -139,7 +142,7 @@ const LoaderHelper = {
         if ( !name || !file ) return;
         this._data[ name ] = new THREE.Object3D();
         const path = this._base +'/'+ file;
-        const loader = new THREE.OBJLoader();
+        const loader = new OBJLoader();
         loader.load( path, data => { this.onData( name, data ) }, null, this.onError );
     },
 
