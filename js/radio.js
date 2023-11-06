@@ -57,7 +57,7 @@ const deviceInfo = (function(){
 const musicHelper = (function(){
     let wrap   = document.querySelector( '#player' );
     let button = wrap ? wrap.querySelector( 'button' ) : null;
-    let audio  = new Audio( 'http://ice1.somafm.com/u80s-256-mp3' );
+    let audio  = new Audio( 'https://regiocast.streamabc.net/regc-80s80sitalohits4327678-mp3-192-4934150?sABC=65494r91%231%23075679p7n204467qn9psn8nq55547ps%23ubzrcntr&mode=preroll&aw_0_1st.skey=1699302960&cb=398204209&listenerid=075679c7a204467da9cfa8ad55547cf&aw_0_1st.playerid=homepage&amsparams=playerid:homepage;skey:1699303057' );
     let step   = 0.01;
     let active = false;
     let sto    = null;

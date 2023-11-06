@@ -24,8 +24,8 @@ body {
     color: #f0f0f0;
 }
 
-//  webgl element,
-    #stageElement {
+// webgl element
+   #stageElement {
        display: block;
        position: fixed;
        left: 0;
@@ -35,9 +35,9 @@ body {
        z-index: -1;
    }
 
-//  fixed sections,
-    .player,
-    .instructions {
+// fixed sections
+   .player,
+   .instructions {
        display: flex;
        position: fixed;
        flex-direction: row;
@@ -55,12 +55,13 @@ body {
   }
 }
 
-//  .music player,
-    .player {
+// music player
+   .player {
        left: 1em;
        bottom: 1em;
 
 button {
+    text-decoration: none;
     display: inline-block;
     background: none;
     border: 2px solid rgba( #fff, 0.8 );
@@ -73,14 +74,17 @@ button {
     border-radius: 4px;
     cursor: pointer;
 
+
+
+
 &:hover {
      border-color: rgba( #fff, 0.6 );
  }
 }
 }
 
-//  music player,
-    .instructions {
+// music player
+   .instructions {
        right: 1em;
        bottom: 1em;
    }

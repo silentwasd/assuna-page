@@ -1,42 +1,38 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>radio</title>
     <link rel="stylesheet" href="css/Radio.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Denk+One">
-</head>
-<body>
-<section class="player" id="player">
-    <div class="fa fa-music"></div>
-    <div class="content">
-        Music Player <br />
-        Station: Underground 80s <br />
-        <button>Play music</button>
-    </div>
-</section>
-<section class="instructions">
-    <div class="fa fa-mouse-pointer"></div>
-    <div class="content">
-        Move to steer. <br />
-        Scroll to accelerate. <br />
-        Click to fire
-    </div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-<script type="importmap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+    <script type="importmap">
     {
       "imports": {
-        "three": "https://unpkg.com/three@0.109.0/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@0.109.0/examples/jsm/"
+        "three": "https://unpkg.com/three@0.120.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.120.0/examples/jsm/"
       }
     }
 </script>
-
+    <body>
 <script type="module" src="js/radio.js"></script>
+<section class="player" id="player">
+    <div class="fa fa-music"></div>
+    Music Player <br />
+    Station: Italo Disco <br />
 
+    <button class="btn">play</button>
+    <style>
+        .btn {
+            padding: 0.5em 1.5em;
+            background-color: transparent;
+            font-size: 0.6em;
+            text-transform: uppercase;
+            color: #616161;
+            border: 2px solid #616161;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+
+</section>
 </body>
-</html>
+
+</section>
