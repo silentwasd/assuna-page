@@ -1,0 +1,98 @@
+@font-face {src: url(../images/arialNarrow.ttf); font-family: arialNarrow}
+* {outline: none; list-style: none; margin: 0; padding: 0}
+html, body {min-width: 1000px; width: 100%}
+body {
+    color: #8f8f8f;
+    font: 12px Tahoma, sans-serif;
+    background: url(https://i.redd.it/g57c85t0tms81.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+<canvas></canvas>
+}
+    body {color: #fff; font-family: arialNarrow, arial, helvetica, tahoma, verdana; font-size: 16px; cursor: default}
+    img {border: none}
+    table {border-collapse: collapse}
+    th, td {vertical-align: middle}
+    p {margin-bottom: 15px}
+    a {color: #e1ca42; text-decoration: none}
+    a:hover {text-decoration: underline}
+
+#page {}
+
+#top {background: url(../images/topBg.jpg)}
+    #top .center {width: 990px; height: 178px; position: relative; margin: 0 auto}
+    #top .logo {position: absolute; top: 15px; left: 0}
+    #top .madeIn {position: absolute; top: 10px; right: 0}
+    #top .device {font-family: arialNarrow; font-size: 25px; position: absolute; top: 108px; left: 0}
+    #top .menu {position: absolute; top: 145px; left: -9px}
+        #top .menu li {background: url(../images/menuDivider.png) 100% 5px no-repeat; font-family: arialNarrow; font-size: 16px; float: left; padding: 0 11px 0 9px}
+        #top .menu li:first-child {padding-left: 0}
+        #top .menu a, #top .menu span {color: #ffe23d; text-decoration: none; padding: 1px 9px 3px 9px}
+        #top .menu a:hover, #top .menu span {background: #506591; color: #fff; border-radius: 3px}
+
+#bottom {background: url(../images/bottomBg.jpg)}
+    #bottom .center {width: 990px; height: 130px; position: relative; margin: 0 auto}
+    #bottom .menu {position: absolute; top: 56px; left: 0}
+        #bottom .menu li {background: url(../images/menuDivider.png) 100% 5px no-repeat; font-family: arialNarrow; font-size: 16px; float: left; padding: 0 20px 0 18px}
+        #bottom .menu li:first-child {padding-left: 0}
+        #bottom .menu a, #bottom .menu span {color: #ffe23d}
+        #bottom .menu span {text-decoration: underline}
+    #bottom .inclouds {color: #02002c; font-size: 13px; position: absolute; top: 100px; right: 100px; padding-right: 119px}
+        #bottom .inclouds img {position: absolute; top: -4px; left: 100px}
+        #bottom .inclouds a {color: #02002c; text-decoration: underline; position: absolute; top: 0; right: 0}
+        #bottom .inclouds a:hover {text-decoration: none}
+	#bottom .counters {position: absolute;
+bottom: 3px;
+right: 0;}
+
+#content {width: 990px; min-height: 500px; margin: 0 auto; padding: 17px 0}
+.index #content {padding: 43px 0}
+.clear {height: 1px; overflow: hidden; clear: left}
+.dir {margin-bottom: 22px}
+h2.header {font-family: impact; font-size: 36px; font-weight: normal; text-align: center; margin-bottom: 10px}
+h4.header {font-size: 26px; font-weight: normal; margin-bottom: 5px}
+.pic.border img {border: 4px #fff solid}
+.textRight {text-align: right}
+
+.left {width: 195px; float: left; padding-right: 18px}
+.right {width: 777px; float: left}
+.index .left {width: 484px; padding-right: 14px}
+.index .right {width: 492px}
+.brandSubListPage .left {width: 195px; padding-right: 5px}
+.brandSubListPage .right {width: 790px}
+
+.news {border-top: 1px #818aa7 solid; padding-top: 28px}
+    .news .title {font-size: 18px; font-weight: bold; margin-bottom: 14px}
+    .news .item {margin-bottom: 24px}
+    .news .date {font-size: 16px; font-weight: bold; margin-bottom: 10px}
+    .news .date a {color: #fff; text-decoration: none}
+    .news .date a:hover {text-decoration: underline}
+.brandList {padding-top: 3px}
+    .brandList li {width: 189px; margin-bottom: 2px}
+    .brandList li:last-child {margin: 0}
+    .brandList a, .brandList span {background: #3c5490 url(../images/brandListBg.png); width: 167px; height: 38px; color: #fff; font-family: arialNarrow; font-size: 16px; text-decoration: none; line-height: 36px; display: block; padding: 0 11px}
+    .brandList a:hover, .brandList span {background-color: #76a1db; background-position: 0 -39px}
+    .index .brandList {padding-top: 6px}
+    .index .brandList li {float: left; margin-right: 9px}
+    .brandSubListPage .brandList {border-right: 1px #8f98ad solid; padding: 0}
+.brandSubList {width: 790px; overflow: hidden}
+    .brandSubList .wide {width: 800px}
+    .brandSubList .item {width: 260px; float: left; margin: 0 5px 5px 0}
+    .brandSubList a, .brandSubList span {background: #3c5490 url(../images/brandSubListBg.png); width: 260px; height: 51px; color: #fff; font-family: arialNarrow; font-size: 16px; text-decoration: none; text-align: center; line-height: 51px; display: block}
+    .brandSubList a:hover, .brandSubList span {background-color: #76a1db; background-position: 0 -51px}
+.brandPicList {border: 1px #fff solid; margin: 30px 0; /*padding: 5px 0*/}
+    .brandPicList .item {/*margin-bottom: 15px;*/ padding-left: 38px; border-bottom: 1px solid #fff;}
+    .brandPicList .item:last-child {margin: 0}
+    .brandPicList .col-1 {width: 510px; /*height: 137px;*/ border-right: 1px #fff solid; float: left; padding: 10px 0}
+    .brandPicList .col-1 .pic {width: 217px; margin-right: 38px; float: left; padding-top: 10px;}
+    .brandPicList .col-1 .pic img {display: block}
+    .brandPicList .col-1 .pic1 {width: 217px; margin-right: 38px; float: right; padding-top: 10px;}
+    .brandPicList .col-1 .pic1 img {display: block}
+    .brandPicList .col-2 {width: 168px; float: left; padding: 10px 0 10px 38px}
+    .brandPicList .col-2 table {height: 137px; font-size: 16px}
+    .brandPicList .col-2 table span {display: block; margin-bottom: 12px}
+    .brandPicList .col-2 table span:last-child {margin: 0}
